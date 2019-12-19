@@ -1,0 +1,168 @@
+<br>
+<div class="container-fluid">
+<div class="main-content" >
+        <div class="row">
+            <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+        <div class="card" >
+          
+          <div class="card-header text-center">
+            <h5 class="title"><i>Patient And Insured Information</i></h5>
+          </div>
+          <div class="card-body">
+           
+              <div class="row">
+                <div class="col-md-4 pr-1">
+                  <div >
+                    <label>Insured's I.D Number</label>
+                    <!-- <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc."> -->
+                    <input type="text" [(ngModel)]="details.id"  id="ip3"class="form-control" placeholder="Subscriber ID">
+                  </div>
+                </div>
+                <div class="col-md-6 pr-1">
+                  <div class="form-group">
+                    <label>Insured's Policy Group or FECA Number</label>
+                    <input type="text"   id="ip3" class="form-control" placeholder="Username" value="Group Number">
+                  </div>
+                </div>
+                <!-- <div class="col-md-4 pl-1">
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input name="email" id="email" type="email" class="form-control" placeholder="Email">
+                  </div>
+                </div> -->
+              </div>
+              <div class="row">
+                  <div class="col-md-4 pr-1">
+                    <div >
+                      <label>Insured's Name(Last)</label>
+                      <input type="text"  id="ip4" class="form-control" placeholder="Last Name" >
+                    </div>
+                  </div>
+                  <div class="col-md-2 pl-1">
+                      <div>
+                        <label>Middle Initial</label>
+                        <input type="text"   id="ip6" class="form-control" placeholder="M.I" >
+                      </div>
+                    </div>
+                  <div class="col-md-6 pl-1">
+                    <div>
+                      <label>Insured Name(First)</label>
+                      <input type="text"  id="ip4" class="form-control" placeholder="First Name" >
+                    </div>
+                  </div>
+                  
+                </div>
+                <br>
+              <div class="row">
+                <div class="col-md-4 pr-1">
+                  <div >
+                    <label>Patient's Name(Last)</label>
+                    <input type="text" [(ngModel)]="details.first" id="ip4" class="form-control" placeholder="Last Name" >
+                  </div>
+                </div>
+                <div class="col-md-2 pl-1">
+                    <div>
+                      <label>Middle Initial</label>
+                      <input type="text"  [(ngModel)]="details.last" id="ip6" class="form-control" placeholder="M.I" >
+                    </div>
+                  </div>
+                <div class="col-md-6 pl-1">
+                  <div>
+                    <label>Patient Name(First)</label>
+                    <input type="text"  [(ngModel)]="details.last" id="ip4" class="form-control" placeholder="First Name" >
+                  </div>
+                </div>
+                
+              </div>
+              <br>
+              <div class="row">
+                  <div class="col-md-4">
+                    <div >
+                        <label>Patient DOB</label>
+                      <mat-form-field>
+                          <input matInput [matDatepicker]="picker" placeholder="MM/DD/YY">
+                          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                          <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                      <div >
+                          
+                          <label >Sex</label>
+     
+                            
+                      </div>
+                      <div class="chk">
+                      <input type="checkbox">M 
+                              <span class="checkmark"></span> &nbsp;
+                      <input type="checkbox" >F
+                              <span class="checkmark"></span>
+                    </div>
+                  </div>
+                    <div class="col-md-5">
+                        <div >
+                            <label>Patient Relationsship to Insured</label>
+                        </div>
+                        <div class="chk">
+                        <input type="checkbox" >Self
+                              <span class="checkmark"></span> &nbsp;
+                      <input type="checkbox" >Spouse
+                              <span class="checkmark"></span>
+                              <input type="checkbox">Child
+                              <span class="checkmark"></span> &nbsp;
+                      <input type="checkbox">Other
+                              <span class="checkmark"></span>
+                      </div>
+                    </div>
+                </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Patient's Address Line 1:</label>
+                    <input type="text" id="ip2"  class="form-control" placeholder="Street and number " >
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label>Patient's Address Line 2:</label>
+                      <input type="text" id="ip2"  class="form-control" placeholder="Apartment, Suite, unit, building, floor, etc">
+                    </div>
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col-md-4 pr-1">
+                  <div class="form-group">
+                    <label>City</label>
+                    <input type="text" id="ip2" class="form-control" placeholder="City" value="Orlando">
+                  </div>
+                </div>
+                <div class="col-md-4 px-1">
+                  <div class="form-group">
+                    <label>State</label>
+                    <input type="text" id="ip2" class="form-control" placeholder="State" value="Florida">
+                  </div>
+                </div>
+                <div class="col-md-4 pl-1">
+                  <div class="form-group">
+                    <label>ZIP Code</label>
+                    <input type="number"  id="ip2" class="form-control" placeholder="32789">
+                  </div>
+                </div>
+              </div> 
+            <div  class="row" >
+                <div  class="col-sm-4" ></div>
+           <div  class="col-sm-6" >
+            <button mat-raised-button (click)="open('focusFirst')"><i>Clear</i></button> &nbsp;
+            <button mat-raised-button (click)="verify()"><i>Verify</i></button>  &nbsp;
+            <button mat-raised-button [routerLink]="['/claimsubmission']" ><i>Next</i></button>
+           </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

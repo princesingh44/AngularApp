@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://41mk0fhpyg.execute-api.us-east-1.amazonaws.com",
+    "secure": false,
+    "changeOrigin":false
+    
+  }
+}
