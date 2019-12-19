@@ -1,0 +1,66 @@
+
+<div mat-dialog-content>
+        <h5 class=" text-center"><u><i> Claim & Payment Acknowledgement  </i></u></h5>
+        <h6 class=" text-center"><i>"Your claim is adjudicated and payment made successfully".  Itemized payment details at service level is sent to your registered email.  Below are the details of the claim adjudicated.</i></h6>
+       <hr>
+        <div class="card-body">
+                <form class="form-inline">
+                        <div style=" margin-right:15px;">
+                       <b> Payment Transaction ID:</b> 
+                      <input type="text"  id="ip3" readonly  value="$200">
+                        </div>
+                      <b> Claim Number:</b>
+                      <input type="text" id="ip3" readonly value="$500">
+                    </form>
+          <form class="form-inline">
+              <div style=" margin-right:95px;">
+             <b> Total Charge:</b> 
+            <input type="text"  id="ip3" readonly  value="$200">
+          </div>
+          <b>Total Discount:</b>
+          <input type="text"  id="ip7" readonly  value="$50">
+            <b> Total Allowed:</b>
+            <input type="text" id="ip3" readonly value="$500">
+           
+          </form>
+          <form class="form-inline">
+              <div class="ab" >
+            <b>Total Payment to provider:</b>
+            <input type="text" id="ip8" readonly value="$150">
+           
+           <b> Member Responsiblity:</b>   
+              <input type="text"  id="ip8" readonly  value="$10">
+            </div>
+           </form>
+           <hr>
+          <b>Service 1:</b>
+          <div class="card-body">
+                <table><tr> 
+                    <th>Title</th> 
+                    <th>CPT/HCPCS</th> 
+                    <th>Diagonsis Code </th>
+                     <th>Charge</th> 
+                     <th>Allowed</th> 
+                     <th>Discount</th> 
+                     <th>Paid to provider</th> 
+                     <th>Member responsiblity</th> 
+                    </tr> 
+                     <tr>
+                          <td><b>Value</b></td>
+                          <td>S0610</td> 
+                          <td>ICD1234</td> 
+                          <td>$250</td> 
+                          <td>$300</td>
+                          <td>$50</td> 
+                          <td>$200</td> 
+                          <td>$10</td> 
+                        </tr>
+                                </table>
+          </div>
+
+         </div>
+        </div>
+        <div mat-dialog-actions align="center">
+         
+          <button mat-raised-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+        </div>

@@ -1,0 +1,142 @@
+
+<div mat-dialog-content>
+    <h5 class=" text-center"><u><i>Patient's Benefit information</i></u></h5>
+   <div class="card-body">
+      <form class="form-inline">
+          <div style=" margin-right:200px;">
+         <b> Patient's Last Name:</b>
+         
+        <input type="text"  id="ip3" readonly  value="Pat Bob">
+      </div>
+        <b> Patient's First Name:</b>
+        <input type="text" id="ip3" readonly value="Pat John">
+      </form>
+      <form class="form-inline">
+          <div style=" margin-right:185px;">
+          <b>Insured's I.D Number:</b>
+          
+        <input type="text"  id="ip3" readonly  value="DELT1234567">
+      </div>
+        <b>Group Number: </b>
+        <input type="text" id="ip3" readonly value="GRPDELT123456">
+       </form>
+       <form class="form-inline">
+          <div style=" margin-right:215px;">
+          <b>Insurer's Address:</b>
+        <input type="text"  id="ip3" readonly  value="INTERNATIONAL PKY,FL">
+      </div>
+        <b> Member Product Code:</b>
+        <input type="text" id="ip3" readonly value="UHG HIGH DEDUCTIBLE">
+       </form>
+       <hr>
+       <div class="card-body">
+         
+          <table>
+              <tr>
+                  <td>Routine/Preventative Care</td>
+                  <td>$0(Covered 100%)</td>
+                </tr>
+                <tr>
+                    <td>Office Visit Copay</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <td>Specialist Copay</td>
+                    <td>$35</td>
+                </tr>
+                <tr>
+                    <td>Urgent Care Pay</td>
+                    <td>$45</td>
+                </tr>
+          </table>
+       </div>
+       <hr>
+      <b>NON-PAR Benefits</b>
+     <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+        <table>
+            <h6>Family</h6>
+            <tr>
+              <td>Max Copay</td>
+              <td>$500</td>
+            </tr>
+            <tr>
+                <td>Max Deductible</td>
+                <td>$2000</td>
+            </tr>
+            <tr>
+              <td> Max OOP</td>
+              <td>$4000</td>
+            </tr>
+            <tr>
+              </table>
+        </div>
+        <div class="col-md-6">
+            <table>
+                <h6>Individual</h6>
+                <tr>
+                  <td>Max Copay</td>
+                  <td>$250</td>
+                </tr>
+                <tr>
+                    <td>Max Deductible</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                  <td> Max OOP</td>
+                  <td>$2000</td>
+                </tr>
+                <tr>
+                  </table>
+            </div>
+          </div>
+          </div>
+      <hr>
+      <b>PAR Benefits</b>
+      <div class="card-body">
+      <div class="row">
+          <div class="col-md-6">
+      <table>
+          <h6>Family</h6>
+          <tr>
+            <td>Max Copay</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+              <td>Max Deductible</td>
+              <td>$2000</td>
+          </tr>
+          <tr>
+            <td> Max OOP</td>
+            <td>$4000</td>
+          </tr>
+          <tr>
+            </table>
+      </div>
+      <div class="col-md-6">
+          <table>
+              <h6>Individual</h6>
+              <tr>
+                <td>Max Copay</td>
+                <td>$250</td>
+              </tr>
+              <tr>
+                  <td>Max Deductible</td>
+                  <td>$1000</td>
+              </tr>
+              <tr>
+                <td> Max OOP</td>
+                <td>$2000</td>
+              </tr>
+              <tr>
+                </table>
+          </div>
+        </div>
+    </div>
+     </div>
+    </div>
+    <div mat-dialog-actions align="center">
+      <button mat-raised-button (click)="onNoClick()">No Thanks</button>
+      <button mat-raised-button [mat-dialog-close]="data.animal" cdkFocusInitial>Proceed</button>
+    </div>

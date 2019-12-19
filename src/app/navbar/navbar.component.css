@@ -1,0 +1,45 @@
+    
+    /* .nav{
+        margin-top: 20px;
+        display: block;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+        
+        
+    }
+    .navbar-nav{
+    
+        text-align:center;
+        float: none;
+       
+    } */
+     #ip3:hover{
+       
+        box-shadow: 0px 5px 11px;
+        display:block;
+        border-radius: 15px 50px;
+        background-color: rgb(37, 134, 172) 
+        
+        
+    }
+    a:active {
+        background-color: #73AD21
+      }
+    .navbar-header{
+        
+        color: white;
+        font-size: larger;
+        font-style: italic
+    }
+   
+ img{
+   height: 40px;
+  }
+         
+          .navbar-header:hover{
+              text-decoration-color: rgb(9, 202, 202);
+            /* text-decoration-line:underline; */
+
+             text-shadow: 2px 2px gray 
+          }
+          

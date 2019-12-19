@@ -1,0 +1,147 @@
+<br>
+<div class="container-fluid ">
+<div class="main-content" >
+        <div class="row " >
+            <div class="col-sm-2"></div>
+        <div class="col-sm-8 scroll " >
+        <div class="card"  >
+          <div class="card-header text-center">
+            <h5 class="title"><i>Health Insurance Claim Form</i></h5>
+          </div>  
+          <div class="card-body">
+              <h6 class="card-title"><u><i>Patient's Information</i></u></h6>
+           <div class="row">   
+          <div class="col-md-5 pr-1">
+              <div class="form-group">
+                <label>Patient's Name(Last)</label>
+                <!-- <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc."> -->
+                <input type="text" id="ip2"class="form-control" disabled placeholder="Last Name">
+              </div>
+            </div>
+            <div class="col-md-5 p1-1">
+                <div class="form-group">
+                  <label>Patient's Name(First)</label>
+                  <!-- <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc."> -->
+                  <input type="text" id="ip2"class="form-control"  disabled placeholder="First Name">
+                </div>
+              </div>
+           </div>
+           </div>
+                <hr>
+          <div class="card-body">
+              <h6 class="card-title"><u><i>Physician's Information</i></u></h6>
+           <div class="row">   
+          <div class="col-md-5 pr-1">
+              <div class="form-group">
+                <label>Rendering Provider ID*</label>
+                <!-- <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc."> -->
+                <input type="text" id="ip2"class="form-control" placeholder="Rendering Provider ID" list="staticUserIds" value="">
+                <datalist id="staticUserIds">
+                    <option>2382348711</option>
+                    <option>2382348712</option>
+                  </datalist>
+              </div>
+            </div>
+            <div class="col-md-5 p1-1">
+                <div class="form-group">
+                  <label>Federal Tax ID Number*</label>
+                  <!-- <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc."> -->
+                  <input type="text" id="ip2"class="form-control" placeholder="Federal Tax ID Number" list="staticUserIds1" value="">
+                  <datalist id="staticUserIds1">
+                      <option>XY1823828378</option>
+                      <option>XY1823828376</option>
+                    </datalist>
+                </div>
+              </div>
+           
+              <div class="col-md-5 pr-1">
+                  <div class="form-group">
+                    <label>Billing Provider ID</label>
+                    <!-- <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc."> -->
+                    <input type="text" id="ip2"class="form-control" placeholder="Billing Provider ID" list="staticUserIds2" value="">
+                    <datalist id="staticUserIds2">
+                        <option>112233448</option>
+                        <option>112233449</option>
+                      </datalist>
+                  </div>
+                </div>
+                <div class="col-md-5 pr-1">
+                    <div class="form-group">
+                      <label>Service Area ZIP Code</label>
+                      <!-- <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc."> -->
+                      <input type="text" id="ip2"class="form-control" placeholder="32789"  value="">
+                    </div>
+                  </div>
+           </div>
+           </div>
+           <hr>
+          <div class="card-body">
+              <h6 class="card-title"><u><i>Service Information</i></u></h6>
+              <p class="card-subtitle text-center"><i><b>Service 1</b></i><p>
+              <div class="row">
+              <div class="col-md-4">
+                  <div >
+                      <label>Date(s) Of Service</label>
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker" placeholder="From">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <label>Date(s) Of Service</label>
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker1" placeholder="To">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                      </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <label>Place Of Service</label>
+                    <input type="text" id="ip2"class="form-control" placeholder="POS" value="">
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-3 pr-1">
+                  <div class="form-group">
+                    <label>CPT/HCPCS</label>
+                    <!-- <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc."> -->
+                    <input type="text" id="ip2"class="form-control" placeholder="Procedure,Services or supplies" value="">
+                  </div>
+                </div>
+                <div class="col-md-3 px-1">
+                  <div class="form-group">
+                    <label>Diagnosis Code</label>
+                    <input type="text"  id="ip2" class="form-control" placeholder="Diagnosis Code" value="">
+                  </div>
+                </div>
+                
+                  <div class="col-md-2 px-1">
+                      <div class="form-group">
+                        <label>Days or Units</label>
+                        <input type="text"  id="ip2" class="form-control" placeholder="days or units" value="1">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                        <div class="form-group">
+                          <label>Charge</label>
+                          <input type="text"  id="ip2" class="form-control" placeholder="billed amount" value="">
+                        </div>
+                      </div>
+              </div>
+              <button mat-raised-button (click)="open('focusFirst')"><i>Add Service +</i></button>
+          </div>
+          
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button mat-raised-button (click)="submit()"><i>Submit Claim for Payment</i></button>
+      </div>
+      
+      </div>
+    </div>
+</div>
