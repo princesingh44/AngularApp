@@ -13,4 +13,5 @@ export class ServiceService {
   getValidation(details){
     return this.httpClient.post("https://41mk0fhpyg.execute-api.us-east-1.amazonaws.com/dev", details)
   }
+  
 }
