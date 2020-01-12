@@ -1,27 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@princesingh44 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-princesingh44
-/
-AngularApp
-1
-00
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
-AngularApp/package.json
-@princesingh44 princesingh44 Next set of code
-52555c9 12 minutes ago
-65 lines (65 sloc)  1.85 KB
-  
 {
   "name": "realtimeprocessing",
   "version": "0.0.0",
